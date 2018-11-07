@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-xs-12">
+    <%= form_tag root_path, method: :post, class: 'form' do %>
+      <%= text_area_tag @posts.content, class: 'form-control' %>
+    <% end %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <% if @posts.nil? == false %>
+      <% @posts.each do |post| %>
+        <p><%=  post.content %></p><br/>
+        <p><%=  post.user.mail %></p>
+      <% end %>
+    <%end %>
+  </div>
+</div>
