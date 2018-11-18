@@ -5,6 +5,8 @@ class Addpost < ActiveRecord::Migration[5.2]
       t.integer :user_id
       t.integer :like
       t.integer :unlike
+      
+      # BIEN !
       end
   end
 end
