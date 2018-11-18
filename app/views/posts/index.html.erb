@@ -9,12 +9,13 @@
 <div class="row">
   <div class="col-xs-12">
     <% if @posts.nil? == false %> 
-    <!-- En revanche ici vous testez la nullabilité sur un tableau => vous avez un problème global avec les types :-/ %>
+    <!-- En revanche ici vous testez la nullabilité sur un tableau => vous avez un problème global avec les types :-/ -->
 
       <% @posts.each do |post| %>
         <p><%=  post.content %></p><br/>
         <p><%=  post.user.mail %></p>
       <% end %>
     <%end %>
+    <!-- Il manque des features ! -->
   </div>
 </div>
