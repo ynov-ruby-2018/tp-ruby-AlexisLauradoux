@@ -4,10 +4,12 @@ class PostsController < ActionController::Base
   end
 
   def post
-
+    # Il manque des trucs là...
   end
 
   def update
-
+    # La aussi, non ?!
   end
+  
+  
 end
